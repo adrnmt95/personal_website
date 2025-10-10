@@ -11,12 +11,22 @@
     <nav>
         <div class="nav-container">
             <h1 class="nav-name">Adriano Amati</h1>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#research">Research</a>
-                <a href="#publications">Publications</a>
-                <a href="#cv">CV</a>
-                <a href="#contact">Contact</a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#cv">CV</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="nav-social">
+                    <a href="https://www.linkedin.com/in/adriano-amati-11b54118a/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/adrnmt95" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -31,19 +41,14 @@
                     </div>
                     <div class="about-content">
                         <p>
-                            I'm a Ph.D. candidate in Economics at Ca' Foscari University of Venice. My research sits at the intersection of political 
-                            economy, causal inference and machine learning.
+                           Welcome to my website!
                         </p>
+
                         <p>
-                            I work on topics like conflict, voting behavior, and organized crime, using tools from 
-                            econometrics, network analysis, and machine learning. These days I'm particularly interested 
-                            in text-as-data methods and how we can use LLMs to better understand political processes.
+                            I am an economist whose research lies at the intersection of political economy, causal inference, and machine learning. I use computational methods to investigate political accountability, conflict dynamics, and the behavior of organized crime.
+                            I am currently completing my Ph.D. at Ca' Foscari University of Venice and will soon be joining ETH Zurich as a postdoctoral researcher in Professor Livia Schubiger's group at <a href="https://irds.ethz.ch/" target="_blank">IRDS</a>. When not running regressions, I can occasionally be found with a guitar in hand.
                         </p>
-                        <p>
-                            Before the PhD, I worked at the European Investment Bank and as a research assistant at 
-                            the University of Turin, where I got into using AI for cultural economics—basically trying 
-                            to predict museum visitor flows and analyzing how people's cultural habits influence each other.
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -52,74 +57,83 @@
         <section id="research" class="section alt-bg">
             <div class="container">
                 <h2>Research Interests</h2>
-                <div class="research-grid">
-                    <div class="research-item">
-                        <h3>Political Economy</h3>
-                        <p>Political institutions, voting behavior, conflict and violence</p>
-                    </div>
-                    <div class="research-item">
-                        <h3>Causal Inference</h3>
-                        <p>Policy evaluation, network econometrics, causal machine learning</p>
-                    </div>
-                    <div class="research-item">
-                        <h3>Computational Methods</h3>
-                        <p>Natural language processing, deep learning, LLMs for social science</p>
-                    </div>
-                    <div class="research-item">
-                        <h3>Crime & Networks</h3>
-                        <p>Organized crime, economic networks, peer effects</p>
-                    </div>
-                </div>
-
-                <h3 class="subsection-title">Current Projects</h3>
-                <div class="projects">
-                    <div class="project">
-                        <h4>LLM Finetuning for Post OCR-Correction of the US Congressional Record</h4>
-                        <p class="coauthors">With S. Galletta and E. Ash (ETH Zürich)</p>
-                    </div>
-                    <div class="project">
-                        <h4>Ideal Point Model: a GNN Approach</h4>
-                        <p class="coauthors">With A. Hoyle (ETH Zürich)</p>
-                    </div>
-                </div>
+                <ul class="research-list">
+                    <li><strong>Political Economy:</strong> Political institutions, voting behavior, conflict and violence</li>
+                    <li><strong>Causal Inference:</strong> Policy evaluation, network econometrics, causal machine learning</li>
+                    <li><strong>AI & Machine Learning:</strong> Natural language processing, deep learning, LLMs for social science</li>
+                    <li><strong>Crime & Networks:</strong> Organized crime, economic networks, peer effects</li>
+                </ul>
             </div>
         </section>
 
         <section id="publications" class="section">
             <div class="container">
-                <h2>Publications & Working Papers</h2>
+                <h2>Working Papers</h2>
                 <div class="publications-list">
                     <div class="pub-item">
-                        <span class="pub-type">[Working Paper]</span>
                         <p class="pub-title">"One Person, One Vote: The Effect of Direct Elections on US Senators"</p>
                         <p class="pub-authors">with S. Galletta</p>
                         <p class="pub-info">
                             <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5110510" target="_blank">Available at SSRN (2025)</a>
                         </p>
+                        <details class="abstract-toggle">
+                            <summary>Abstract</summary>
+                            <p class="abstract-text">
+                                The 17th Amendment to the U.S. Constitution, ratified in 1913, introduced direct elections for the U.S. Senate, substantially democratizing the existing system of indirect selection by U.S. state legislatures. This paper analyzes the impacts of this reform on measures of each senator's policy priorities constructed from the texts of their floor speeches and records of roll call votes. Using a difference-in-differences strategy comparing Senators with House Members (already directly elected) from the same state as the control group, we find that direct elections move Senators' policy agendas more closely to those associated with the House. The shift in priorities involves an increase in attention to fiscal policy and taxation and reduced attention to infrastructure and immigration, with an overall narrowing in the diversity of topics covered. Consistent with electoral retention motives as a mechanism, the effect is similar when limiting to incumbent Senators and including senator fixed effects. There is no effect of direct elections on the ideological slant of roll call votes, however, suggesting the effect on expressed agendas did not translate into direct effects on enacted policies.
+                            </p>
+                        </details>
                     </div>
                     <div class="pub-item">
-                        <span class="pub-type">[Working Paper]</span>
-                        <p class="pub-title">"Political Shocks, Extremism and Violence: Evidence from the West Bank"</p>
-                    </div>
-                    <div class="pub-item">
-                        <span class="pub-type">[Working Paper]</span>
-                        <p class="pub-title">"Organized Crime and the Legal Economy: a Network Approach"</p>
-                        <p class="pub-authors">with M. Billio, M. Di Cataldo, G. Mastrobuoni</p>
-                    </div>
-                    <div class="pub-item">
-                        <span class="pub-type">[Working Paper]</span>
-                        <p class="pub-title">"Together is Better: Peer Effects in Leisure Activities"</p>
+                        <p class="pub-title">"The Social Multiplier of Leisure: Peer Effects in Museum Attendance"</p>
                         <p class="pub-authors">with P. Accardo, G. Mastrobuoni</p>
+                        <p class="pub-info">
+                            <a href="https://researchportal.bath.ac.uk/en/publications/the-social-multiplier-of-leisure-peer-effects-in-museum-attendanc" target="_blank">University of Bath Working Paper Series</a>
+                        </p>
+                        <details class="abstract-toggle">
+                            <summary>Abstract</summary>
+                            <p class="abstract-text">
+                                This study uses a unique longitudinal data set on daily museum visits in Northern Italy to investigate how social networks influence leisure consumption. Based on detailed administrative records of museum cardholders, we use repeated joint visits to build a dynamic network of peers. We identify peer effects that exploit exogenous variation in membership prices generated by age-based discounts. We find robust evidence of peer spillovers in both museum attendance and membership renewal, primarily driven by a preference for shared experiences. These results underscore the role of social interactions in shaping leisure demand and support the view that social networks can amplify individual behavior. More broadly, our findings contribute to the understanding of peer dynamics in settings where consumption is inherently social.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Work in Progress</h2>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <p class="pub-title">"Political Shocks, Extremism and Violence: Evidence from the West Bank"</p>
+                        <details class="abstract-toggle">
+                            <summary>Abstract</summary>
+                            <p class="abstract-text">
+                                This study investigates the impact of political shocks on extremist violence. It analyzes the aftermath of the December 2017 U.S. recognition of Jerusalem as Israel's capital, treating the decision as a quasi-experimental shock. Using a staggered difference-in-differences methodology, the paper examines changes in violence comparing areas proximate to illegal Israeli outposts with those that are not. The findings reveal that the U.S. declaration triggered a sharp and significant increase in violence in areas near these outposts, where violent events rose by roughly 150\%. The analysis shows that incidents targeting civilians were particularly affected. The escalation of violence was asymmetrical; there was an immediate surge in violence perpetrated by Israeli settlers in the first years following the announcement. Conversely, a significant rise in violence from Palestinians emerged with a delay of nearly four years. These results suggest the diplomatic shock acted as a catalyst for radical behavior, initiating a self-perpetuating cycle of conflict in the West Bank. Further expansions will explore the role of domestic political dynamics in reaction to Trump's declaration.
+                            </p>
+                        </details>
                     </div>
                     <div class="pub-item">
-                        <span class="pub-type">[Report]</span>
-                        <p class="pub-title">European Investment Bank. (2021). Chapter 5. In <em>EIB Investment Report 2020/2021: Building a smart and Green Europe in the COVID-19 ERA</em></p>
+                        <p class="pub-title">"Mafia Network: a Machine Learning Approach"</p>
+                        <p class="pub-authors">with M. Billio, M. Di Cataldo</p>
+                        <details class="abstract-toggle">
+                            <summary>Abstract</summary>
+                            <p class="abstract-text">
+                                This paper develops a novel early-warning system to predict firm confiscation due to mafia infiltration in Italy. We construct a dynamic, time-resolved corporate ownership network by tracing the first- and second-degree connections of all Italian firms confiscated between 2000 and 2024. Using this unique dataset, we train a series of machine learning models, combining firm-level financial data with a comprehensive set of network topology measures to forecast firm confiscation up to three years in advance. Our out-of-sample results demonstrate high predictive power, with the combined model achieving an Area Under the Curve (AUC) score of up to 0.975. We find that network features are crucial for achieving high recall, while firm-level financials provide higher precision. The integrated model effectively balances this trade-off, outperforming models that rely on either data source alone. A feature-contribution analysis using SHAP values reveals that firm size is the single most important predictor, with smaller and financially distressed firms facing higher confiscation risk. Network topology features also emerge as the second most important predictors. Taken together, our findings underscore the value of integrating ownership network intelligence with firm fundamentals to create a powerful and interpretable tool for risk-based supervision and enforcement against organized crime. Future work will leverage continuous-time dynamic graph networks to generate transferable firm embeddings, offering deeper insights into the latent nature of organized crime infiltration.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Other Projects</h2>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <p class="pub-title">LLM Finetuning for Post OCR-Correction of the US Congressional Record</p>
+                        <p class="pub-authors">with S. Galletta and E. Ash (ETH Zürich)</p>
                     </div>
                     <div class="pub-item">
-                        <span class="pub-type">[Report]</span>
-                        <p class="pub-title">"European firms and climate change 2020/2021"</p>
-                        <p class="pub-authors">Amati A., Dominguez S., Kalantzis F.</p>
-                        <p class="pub-info">European Investment Bank</p>
+                        <p class="pub-title">Ideal Point Model: a Graph Neural Network Approach</p>
+                        <p class="pub-authors">with A. Hoyle (ETH Zürich)</p>
+                    </div>
+                    <div class="pub-item">
+                        <p class="pub-title">Production Networks & Lobbying</p>
+                        <p class="pub-authors">with L. Scotti (Ca' Foscari)</p>
                     </div>
                 </div>
             </div>
@@ -129,33 +143,55 @@
             <div class="container">
                 <h2>CV</h2>
                 <p>You can download my full CV here:</p>
-                <a href="main.pdf" class="cv-button" target="_blank">
+                <a href="cv.pdf" class="cv-button" target="_blank">
                     <i class="fas fa-file-pdf"></i> Download CV (PDF)
                 </a>
 
                 <div class="cv-highlights">
+                    <h3>Teaching</h3>
+                    <ul class="education-list">
+                        <li>
+                            <strong>Causal Machine Learning</strong><br>
+                            <span class="institution">Guest Lecturer, Ph.D. Level, Ca' Foscari University of Venice</span><br>
+                            <span class="institution"><a href="https://github.com/adrnmt95/causal_ml_lecture" target="_blank">Notebook material available here</a></span>
+                        </li>
+                        <li>
+                            <strong>Microeconomics</strong><br>
+                            <span class="institution">Teaching Assistant, Bachelor Level, Ca' Foscari University of Venice</span>
+                        </li>
+                        <li>
+                            <strong>Macroeconomics</strong><br>
+                            <span class="institution">Teaching Assistant, Bachelor Level, Ca' Foscari University of Venice</span>
+                        </li>
+                        <li>
+                            <strong>Probability Theory and Statistics</strong><br>
+                            <span class="institution">Teaching Assistant, Ph.D. Level, Ca' Foscari University of Venice</span>
+                        </li>
+                        <li>
+                            <strong>Economics of Risk and Agent Behavior</strong><br>
+                            <span class="institution">Guest Lecturer, Master Level, Ca' Foscari University of Venice</span>
+                        </li>
+                    </ul>
+
                     <h3>Education</h3>
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <h4>Ph.D. in Economics</h4>
-                            <span class="cv-date">2022 - Present</span>
-                        </div>
-                        <p class="cv-institution">Ca' Foscari University of Venice, Italy</p>
-                    </div>
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <h4>M.A. Economics</h4>
-                            <span class="cv-date">2019 - 2020</span>
-                        </div>
-                        <p class="cv-institution">Collegio Carlo Alberto, Turin, Italy</p>
-                    </div>
-                    <div class="cv-item">
-                        <div class="cv-header">
-                            <h4>M.Sc. International Trade, Finance and Development</h4>
-                            <span class="cv-date">2018 - 2019</span>
-                        </div>
-                        <p class="cv-institution">Barcelona Graduate School of Economics, Spain</p>
-                    </div>
+                    <ul class="education-list">
+                        <li>
+                            <strong>Ph.D. in Economics</strong> (2022 - Present)<br>
+                            <span class="institution">Ca' Foscari University of Venice, Italy</span>
+                        </li>
+                        <li>
+                            <strong>M.A. Economics</strong> (2019 - 2020)<br>
+                            <span class="institution">Collegio Carlo Alberto, Turin, Italy</span>
+                        </li>
+                        <li>
+                            <strong>M.Sc. International Trade, Finance and Development</strong> (2018 - 2019)<br>
+                            <span class="institution">Barcelona Graduate School of Economics, Spain</span>
+                        </li>
+                        <li>
+                            <strong>B.Sc. Economics and Business Economics</strong> (2014 - 2017)<br>
+                            <span class="institution">Maastricht University, The Netherlands</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -187,7 +223,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Adriano Amati. Built with HTML, CSS, and curiosity.</p>
+            <p>&copy; 2025, Adriano Amati.</p>
         </div>
     </footer>
 </body>
