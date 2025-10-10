@@ -1,0 +1,306 @@
+%
+%Academic CV LaTeX Template
+%
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+% FIX: Modified resumePOR command to use \item[] to suppress the bullet
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+% FIX: Modified resumeSubheading command to use \item[] to suppress the bullet
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.1mm}\item[]
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+% FIX: Modified resumeProject command to use \item[] to suppress the bullet
+\newcommand{\resumeProject}[4]{
+\vspace{0.1mm}\item[]
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0.5mm}} % Reduced space - adjust as needed
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-0.5mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-0.5mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Large\textbf{ADRIANO AMATI}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \href{mailto:adriano.amati@unive.it}{adriano.amati@unive.it} | 
+    \href{mailto:adrianoamati@gmail.com}{adrianoamati@gmail.com} | 
+
+    }
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/adriano-amati-11b54118a/}{adriano-amati} | 
+    \socialicon{\faGithub} \href{https://github.com/adrnmt95}{adrnmt95}
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Ph.D. Candidate}{Ca' Foscari University of Venice, Italy}
+{Department of Economics}{09/2022 - Present}
+\resumeItemListStart 
+\item \textbf{Research Topics:} Political Economy, Conflict, Crime, Voting, Causal Inference, Policy Evaluation, Network Econometrics, Machine Learning, Natural Language Processing, Deep Learning, Large Language Models
+\item \textbf{Teaching}: Causal Machine Learning (Lecturer, PhD), Microeconomics TA (Bachelor), Macroeconomics TA (Bachelor), Probability Theory and Statistics TA (PhD), "Economics of Risk and Agent Behavior" (Master)
+
+\item Supervisors: professors M. Di Cataldo and A. Brugiavini
+\resumeItemListEnd
+
+\resumeSubheading
+{Visiting Researcher}{ETH Zürich, Switzerland}
+{Center for Law, Data Science and Economics}{09/2024 - 07/2025}
+\resumeItemListStart
+\item Visiting Ph.D. at ETH Zürich's Center for Law and Economics (professor Elliott Ash research group)
+\item Worked on projects on political economy, voting, and text-as-data methods
+\item Ongoing research projects on fine-tuning Large Language Models (LLMs) for post-OCR correction of the US Congressional Record and on ideal point estimation using Graph Neural Networks (GNNs)
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Assistant}{Univerisity of Turin, Italy}
+{RA for professor G. Mastrobuoni (AI4MUSE Project)}{04/2021 - 09/2022}
+
+\resumeItemListStart
+\item Developed AI models and Machine Learning algorithms to forecast the number of visitors in museums and cultural sites participating to the AI4MUSE project in real time
+\item Developed research in network econometrics to analyse peer effects in cultural consumption for museum card-holders
+\item Worked in outreach and communication activities for the AI4MUSE project, website and social media management
+\item Liaised with museums' administrators and curators to collect data and develop the project
+\resumeItemListEnd
+
+\resumeSubheading
+{Trainee}{European Investment Bank, Luxembourg}
+{SG-ECON}{10/2020 - 03/2021}
+\resumeItemListStart
+\item Worked both in the context of productivity and firm level data (A. Brasili), Energy Economics and Climate Change (F. Kalantzis)
+\item Management of very large firm-level datasets, data collection and cleaning, web-scraping, data visualization, model validation, literature reviews, statistical and econometric analysis
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Collegio Carlo Alberto}{Turin, Italy}
+{M.A. Economics}{09/2019 - 06/2020}
+\resumeItemListStart
+\item Relevant courses: Advanced Microeconomics, Advanced Game Theory, Macroeconometrics
+\resumeItemListEnd
+
+\resumeSubheading
+{Barcelona Graduate School of Economics}{Barcelona, Spain}
+{M.Sc. in International Trade, Finance and Development}{09/2018 - 07/2019}
+\resumeItemListStart
+\item Thesis: "Going West: an Analysis on Migration Patterns and Its Determinants"
+\item Relevant courses: Economic Growth and Development, International Trade and Finance
+\resumeItemListEnd
+
+\resumeSubheading
+{Maastricht University}{Maastricht, The Netherlands}
+{Bachelor in Economics \& Business Economics}{09/2014 - 06/2017}
+\resumeItemListStart
+\item Thesis: "Trust, Herding Behavior and Financial Instability"
+\item Relevant courses: Microeconomics, Game Theory, Public Economics, Corporate Finance, Econometrics
+\item Erasmus Grant: Universidade Nova de Lisboa
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{\textbf{Publications \& Working Papers}}
+\vspace{-0.4mm}
+\small{
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+\item[\textbf{[W]}] "One Person, One Vote: The Effect of Direct Elections on US Senators", with S. Galletta. \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5110510}{Available at  SSRN (2025)} 
+
+\item[\textbf{[W]}] "Political Shocks, Extremism and Violence: Evidence from the West Bank". 
+\item[\textbf{[W]}] "Organized Crime and the Legal Economy: a Network Approach", with M. Billio, M. Di Cataldo, G. Mastrobuoni.
+\item[\textbf{[W]}] "Together is Better: Peer Effects in Leisure Activities", with P. Accardo, G. Mastrobuoni 
+\item[\textbf{[R]}] European Investment Bank. (2021). Chapter 5. In \textit{EIB Investment Report 2020/2021: Building a smart and Green Europe in the COVID-19 ERA}.
+\item[\textbf{[R]}] Amati A., Dominguez S., Kalantzis F., (2021), "European firms and climate change 2020/2021", European Investment Bank
+\end{enumerate}
+}
+
+\section{\textbf{Ongoing Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+{LLM Finetuning for Post OCR-Correction of the US Congressional Record} % Arg 1
+{With S. Galletta and E. Ash (ETH Zürich)}          % Arg 2
+{}                                                   
+{}                                                    % Arg 4 (empty)
+
+\resumeProject
+{Ideal Point Model: a GNN Approach} % Arg 1
+{With A. Hoyle (ETH Zürich)}      % Arg 2
+{}                               
+{}                                
+
+
+\resumeSubHeadingListEnd
+
+\section{\textbf{Conferences}}
+\vspace{-0.4mm}
+\begin{itemize}[leftmargin=*]
+\item[] \small{SIEP, Verona (September 2023); Ca' Foscari University of Venice (November 2023); EUI Econometrics Working Group, Florence (January 2024); ECPS, Vienna (April 2024); Ph.D Day, Venice (June 2024); Collegio Carlo Alberto, Turin (December 2024); Brownbag Seminar, ETH Zürich (April 2025); Monash-Paris-Warwick-Zürich Text-as-Data Workshop (April 2025); SiDE ICEEE Conference Palermo (May 2025); EEA Conference, Bordeaux (August 2025)}
+\end{itemize}
+\vspace{2mm}
+
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+\resumeSubItem{Languages:}
+{Italian (Native), English (Fluent), Spanish (Advanced), Portuguese (Basic User)}
+\resumeSubItem{Programming:}
+{Python (Excellent), Stata (Excellent),  Latex (Excellent), R (Good), ArcGIS Pro (Good), QGIS (Good), Bash (Good),  JavaScript(Basic User), MatLab (Basic User), HTML (Basic User)}
+\resumeHeadingSkillEnd
+
+\section{\textbf{Additional Information}}
+\vspace{-0.4mm}
+\small{
+\textbf{Interests:} Advanced Music Skills (Music Theory, Harmony, Advanced Guitar Player), Cinema, Literature, Politics
+}
+
+\end{document}
