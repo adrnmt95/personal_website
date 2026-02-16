@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1771255426 "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf" "main" 1771258033
-  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.aux" 1771255427 1522 6b08f53a41b809d2a0c9a9d975c05373 ""
-  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" 1771258031 11759 a1d32ff79149beacd49274c7a28749cf ""
+["pdflatex"] 1771258127 "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf" "main" 1771258127
+  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.aux" 1771258127 1522 6b08f53a41b809d2a0c9a9d975c05373 ""
+  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" 1771258126 11576 2166cdbdf2bceb93f3c3e0f31627eb97 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1585083055 2911 7adff171bd8c0a41152be2ab1520c87f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -231,13 +231,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1588095392 2432464 fc6c21e81e11f44d6a72b4d7672f05db ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "main.aux" 1771255427 1522 6b08f53a41b809d2a0c9a9d975c05373 "pdflatex"
-  "main.out" 1771255427 351 e8707fe854db09e07d21c0cbd6958510 "pdflatex"
-  "main.tex" 1771258031 11759 a1d32ff79149beacd49274c7a28749cf ""
+  "main.aux" 1771258127 1522 6b08f53a41b809d2a0c9a9d975c05373 "pdflatex"
+  "main.out" 1771258127 351 e8707fe854db09e07d21c0cbd6958510 "pdflatex"
+  "main.tex" 1771258126 11576 2166cdbdf2bceb93f3c3e0f31627eb97 ""
   (generated)
+  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.log"
   "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf"
   "main.aux"
-  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.log"
-  "main.pdf"
   "main.log"
   "main.out"
+  "main.pdf"
