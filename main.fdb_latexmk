@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1777975494 "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf" "main" 1777975523
-  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.aux" 1777975495 1522 6b08f53a41b809d2a0c9a9d975c05373 ""
-  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" 1777975523 11536 a6d26ebcf9765a7eac49909db5252583 ""
+["pdflatex"] 1789137037 "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf" "main" 1789137038
+  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.aux" 1789137038 1522 6b08f53a41b809d2a0c9a9d975c05373 ""
+  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.tex" 1789137037 11548 fab50177f0820c6d60cec200f27bfc8c ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1585083055 2911 7adff171bd8c0a41152be2ab1520c87f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -231,13 +231,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1588095392 2432464 fc6c21e81e11f44d6a72b4d7672f05db ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "main.aux" 1777975495 1522 6b08f53a41b809d2a0c9a9d975c05373 "pdflatex"
-  "main.out" 1777975495 351 e8707fe854db09e07d21c0cbd6958510 "pdflatex"
-  "main.tex" 1777975523 11536 a6d26ebcf9765a7eac49909db5252583 ""
+  "main.aux" 1789137038 1522 6b08f53a41b809d2a0c9a9d975c05373 "pdflatex"
+  "main.out" 1789137038 351 e8707fe854db09e07d21c0cbd6958510 "pdflatex"
+  "main.tex" 1789137037 11548 fab50177f0820c6d60cec200f27bfc8c ""
   (generated)
-  "main.pdf"
-  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf"
   "main.out"
   "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.log"
   "main.aux"
+  "main.pdf"
   "main.log"
+  "/Users/adrianoamati/Desktop/Applicatons/academic-website/main.pdf"
