@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -487,3 +487,43 @@ footer p {
         font-size: 1rem;
     }
 }
+
+
+/* --- additions (2026) --- */
+.banner {
+    background: #fff8e6;
+    border: 1px solid #f0d58c;
+    border-left: 4px solid #e0a800;
+    border-radius: 6px;
+    padding: 0.9rem 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 1.02rem;
+}
+.banner a { color: var(--primary-color); font-weight: 600; }
+.banner a:hover { color: var(--secondary-color); }
+
+.muted { color: #666; font-size: 0.95rem; }
+.muted a { color: var(--secondary-color); text-decoration: none; }
+
+.lead { font-size: 1.1rem; margin-bottom: 1rem; }
+
+.pub-item.jmp { border-left-color: #e0a800; }
+
+.pub-links { font-size: 0.9rem; color: #666; margin-bottom: 0.25rem; }
+.pub-links a { color: var(--secondary-color); text-decoration: none; margin-right: 0.75rem; }
+.pub-links a:hover { text-decoration: underline; }
+
+.pub-status {
+    display: inline-block;
+    background: #eef3f8;
+    color: var(--primary-color);
+    padding: 0.1rem 0.55rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.75rem;
+}
+
+.abstract-text.open { margin-top: 0.75rem; }
+
+.publications-list.compact .pub-item { padding: 1rem 1.5rem; }

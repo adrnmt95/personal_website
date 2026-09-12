@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adriano Amati</title>
+    <title>Adriano Amati — Political Economy, ETH Zürich</title>
+    <meta name="description" content="Adriano Amati is a postdoctoral researcher at ETH Zürich working on political violence, state enforcement, organized crime, and legislative behavior, with causal inference and computational methods. On the 2026–27 academic job market.">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -14,18 +15,20 @@
             <div class="nav-right">
                 <div class="nav-links">
                     <a href="#about">About</a>
-                    <a href="#research">Topics</a>
-                    <a href="#publications">Research</a>
+                    <a href="#research">Research</a>
+                    <a href="#papers">Papers</a>
+                    <a href="#teaching">Teaching</a>
                     <a href="#cv">CV</a>
                     <a href="#contact">Contact</a>
                 </div>
                 <div class="nav-social">
-                    <a href="https://www.linkedin.com/in/adriano-amati-11b54118a/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
                     <a href="https://github.com/adrnmt95" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
+                    <a href="https://www.linkedin.com/in/adriano-amati-11b54118a/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- TODO: add Google Scholar once you have a profile -->
                 </div>
             </div>
         </div>
@@ -34,21 +37,32 @@
     <main>
         <section id="about" class="section">
             <div class="container">
-                <h2>About</h2>
+                <div class="banner">
+                    <strong>I am on the 2026–27 academic job market.</strong>
+                    Job market paper: <a href="#jmp">When Governments Look Away: Extremist Violence in the West Bank</a>
+                    &nbsp;·&nbsp; <a href="amati_cv.pdf" target="_blank">CV (PDF)</a>
+                </div>
                 <div class="about-wrapper">
                     <div class="profile-image">
                         <img src="picture_site.jpeg" alt="Adriano Amati">
                     </div>
                     <div class="about-content">
                         <p>
-                           Welcome to my website!
+                            I am a postdoctoral researcher at ETH Zürich in the
+                            <a href="https://irds.ethz.ch/" target="_blank">International Relations and Data Science</a> group led by Livia Schubiger.
+                            I completed my PhD in Economics at Ca' Foscari University of Venice in February 2026, and I spent 2024–25 as a visiting researcher in Elliott Ash's group at the ETH Center for Law and Economics.
                         </p>
-
                         <p>
-                            I am an economist whose research lies at the intersection of political economy, causal inference, and machine learning. I use computational methods to investigate political accountability, conflict dynamics, and the behavior of organized crime.
-                            I am currently a postdoctoral researcher at ETH Zurich in Professor Livia Schubiger's <a href="https://irds.ethz.ch/" target="_blank">IRDS</a> group. I completed my Ph.D. in Economics at Ca' Foscari University of Venice in February 2026. When not running regressions, I can occasionally be found with a guitar in hand.
+                            I work on political economy. My research asks how political institutions shape enforcement and accountability:
+                            when governments choose not to restrain violence they could stop, how criminal organizations hide inside the legal economy,
+                            and how politicians change what they do when their audience changes.
+                            I combine causal research designs with data I build from satellite imagery, event records coded with language models,
+                            corporate ownership graphs, and parliamentary speech.
                         </p>
-
+                        <p class="muted">
+                            Email: <a href="mailto:adriano.amati@gess.ethz.ch">adriano.amati@gess.ethz.ch</a>
+                            <!-- TODO: confirm the ETH address -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -56,25 +70,50 @@
 
         <section id="research" class="section alt-bg">
             <div class="container">
-                <h2>Research Interests</h2>
+                <h2>Research</h2>
+                <p class="lead">
+                    Three questions run through my work.
+                </p>
                 <ul class="research-list">
-                    <li><strong>Political Economy:</strong> Political institutions, voting behavior, conflict and violence</li>
-                    <li><strong>Causal Inference:</strong> Policy evaluation, network econometrics, causal machine learning</li>
-                    <li><strong>AI & Machine Learning:</strong> Natural language processing, deep learning, LLMs for social science</li>
-                    <li><strong>Crime & Networks:</strong> Organized crime, economic networks, peer effects</li>
+                    <li><strong>Why do states look away from violence they could stop?</strong>
+                        Governments can benefit from private violence without organizing it, simply by enforcing the law selectively.
+                        My job market paper develops this idea, institutional forbearance, and tests it in the West Bank.</li>
+                    <li><strong>How does organized crime use the legal economy?</strong>
+                        With co-authors I build dynamic corporate ownership networks around firms confiscated from the mafia in Italy and use graph neural networks to detect and date infiltration.</li>
+                    <li><strong>How do politicians respond to a new audience?</strong>
+                        Using the Seventeenth Amendment, which moved U.S. senators to direct election, we study what legislators change when voters rather than legislatures choose them.</li>
                 </ul>
+                <p>
+                    <strong>Methods.</strong> Difference-in-differences and event studies, instrumental variables, spatial and network econometrics,
+                    text-as-data and large language models, graph neural networks, satellite imagery.
+                </p>
             </div>
         </section>
 
-        <section id="publications" class="section">
+        <section id="papers" class="section">
             <div class="container">
-                <h2>Working Papers</h2>
+                <h2>Job Market Paper</h2>
+                <div class="publications-list">
+                    <div class="pub-item jmp" id="jmp">
+                        <p class="pub-title">When Governments Look Away: Extremist Violence in the West Bank</p>
+                        <p class="pub-authors">single-authored</p>
+                        <p class="pub-links">
+                            <a href="papers/amati_westbank_jmp.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Paper (PDF)</a>
+                        </p>
+                        <p class="abstract-text open">
+                            Why do governments fail to restrain non-state violence when they can? Existing accounts emphasize weak capacity, direct state organization of violence, or strategic relationships with armed groups. They say less about decentralized violence enabled through enforcement choices. I develop a theory of institutional forbearance: governments may relax enforcement when violence advances goals they value, and anticipated leniency weakens deterrence. I test the argument in the West Bank, where radical settlers pursue territorial objectives partly shared by members of the Israeli government. Trump's 2016 election sharply reduced U.S. pressure on Israel, lowering external costs of forbearance. Using difference-in-differences, I compare changes across locations differing in pre-election suitability for settlement expansion. Settler violence against Palestinians rises disproportionately in high-suitability locations, increasing sharply in January 2018 and remaining elevated through 2023. Institutional forbearance thus enables non-state violence through selective enforcement without requiring centralized direction or an explicit agreement.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Working Papers</h2>
                 <div class="publications-list">
                     <div class="pub-item">
-                        <p class="pub-title">"The Audience and the Agenda: Electoral Accountability and the Public Record"</p>
-                        <p class="pub-authors">with S. Galletta</p>
-                        <p class="pub-info">
-                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5110510" target="_blank">Available at SSRN (2025)</a>
+                        <p class="pub-title">The Audience and the Agenda: Electoral Accountability and the Public Record</p>
+                        <p class="pub-authors">with Sergio Galletta</p>
+                        <p class="pub-links">
+                            <span class="pub-status">Under review</span>
+                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5110510" target="_blank">SSRN</a>
                         </p>
                         <details class="abstract-toggle">
                             <summary>Abstract</summary>
@@ -83,10 +122,27 @@
                             </p>
                         </details>
                     </div>
+
                     <div class="pub-item">
-                        <p class="pub-title">"The Social Multiplier of Leisure: Peer Effects in Museum Attendance"</p>
-                        <p class="pub-authors">with P. Accardo, G. Mastrobuoni</p>
-                        <p class="pub-info">
+                        <p class="pub-title">Mafia Connections: Infiltration in Corporate Ownership</p>
+                        <p class="pub-authors">with Monica Billio, Marco Di Cataldo, and Giovanni Mastrobuoni</p>
+                        <p class="pub-links">
+                            <span class="pub-status">Working paper</span>
+                            <!-- TODO: add a PDF link when you are ready to circulate it -->
+                        </p>
+                        <details class="abstract-toggle">
+                            <summary>Abstract</summary>
+                            <p class="abstract-text">
+                                Learned representations have transformed the measurement of unstructured data in economics. We extend it to relational data, showing that Temporal Graph Networks encode economically meaningful behavior in dynamic corporate ownership networks. Using a high-resolution Italian ownership graph anchored on 5,700 judicially confiscated firms, we train a TGN to produce time-varying firm embeddings and validate them along three dimensions: they forecast confiscation out of sample up to four years ahead, well beyond firm financials and conventional network statistics; their geometry places firms confiscated only later closer to firms already confiscated at the time of measurement; and they respond coherently to local changes in ownership. We summarize this geometry with an Infiltration Proximity Index and use it to date firms' transitions into a high-risk regime in a staggered difference-in-differences design. Around the dated transition, firms display sharp scale expansion, rising liabilities and receivables, cost reallocation, and persistent illiquidity, with only temporary profit gains, patterns consistent with firms operating as conduits for financial flows rather than as profit maximizers.
+                            </p>
+                        </details>
+                    </div>
+
+                    <div class="pub-item">
+                        <p class="pub-title">The Social Multiplier of Leisure: Peer Effects in Museum Attendance</p>
+                        <p class="pub-authors">with Pasquale Accardo and Giovanni Mastrobuoni</p>
+                        <p class="pub-links">
+                            <span class="pub-status">Working paper</span>
                             <a href="https://researchportal.bath.ac.uk/en/publications/the-social-multiplier-of-leisure-peer-effects-in-museum-attendanc" target="_blank">University of Bath Working Paper Series</a>
                         </p>
                         <details class="abstract-toggle">
@@ -99,121 +155,83 @@
                 </div>
 
                 <h2 style="margin-top: 3rem;">Work in Progress</h2>
-                <div class="publications-list">
+                <div class="publications-list compact">
                     <div class="pub-item">
-                        <p class="pub-title">"When Governments Look Away: Extremist Violence in the West Bank"</p>
-                        <details class="abstract-toggle">
-                            <summary>Abstract</summary>
-                            <p class="abstract-text">
-                                Why do governments fail to restrain non-state violence when they can? Existing accounts emphasize weak capacity, direct state organization of violence, or strategic relationships with armed groups. They say less about decentralized violence enabled through enforcement choices. I develop a theory of institutional forbearance: governments may relax enforcement when violence advances goals they value, and anticipated leniency weakens deterrence. I test the argument in the West Bank, where radical settlers pursue territorial objectives partly shared by members of the Israeli government. Trump’s 2016 election sharply reduced U.S. pressure on Israel, lowering external costs of forbearance. Using difference-in-differences, I compare changes across locations differing in pre-election suitability for settlement expansion. Settler violence against Palestinians rises disproportionately in high-suitability locations, increasing sharply in January 2018 and remaining elevated through 2023. Institutional forbearance thus enables non-state violence through selective enforcement without requiring centralized direction or an explicit agreement.
-                            </p>
-                        </details>
+                        <p class="pub-title">Post-OCR Correction of the U.S. Congressional Record with Fine-Tuned Language Models</p>
+                        <p class="pub-authors">with Sergio Galletta and Elliott Ash</p>
                     </div>
                     <div class="pub-item">
-                        <p class="pub-title">"Mafia Connections: Infiltration in Corporate Ownership"</p>
-                        <p class="pub-authors">with M. Billio, M. Di Cataldo and G. Mastrobuoni</p>
-                        <details class="abstract-toggle">
-                            <summary>Abstract</summary>
-                            <p class="abstract-text">
-                                Learned representations have transformed the measurement of unstructured data in economics. We extend it to relational data, showing that Temporal Graph Networks encode economically meaningful behavior in dynamic corporate ownership networks. Using a high-resolution Italian ownership graph anchored on 5,700 judicially confiscated firms, we train a TGN to produce time-varying firm embeddings and validate them along three dimensions: they forecast confiscation out of sample up to four years ahead, well beyond firm financials and conventional network statistics; their geometry places firms confiscated only later closer to firms already confiscated at the time of measurement; and they respond coherently to local changes in ownership. We summarize this geometry with an Infiltration Proximity Index and use it to date firms' transitions into a high-risk regime in a staggered difference-in-differences design. Around the dated transition, firms display sharp scale expansion, rising liabilities and receivables, cost reallocation, and persistent illiquidity, with only temporary profit gains, patterns consistent with firms operating as conduits for financial flows rather than as profit maximizers.
-                            </p>
-                        </details>
-                    </div>
-                </div>
-
-                <h2 style="margin-top: 3rem;">Other Projects</h2>
-                <div class="publications-list">
-                    <div class="pub-item">
-                        <p class="pub-title">LLM Finetuning for Post OCR-Correction of the US Congressional Record</p>
-                        <p class="pub-authors">with S. Galletta and E. Ash (ETH Zürich)</p>
+                        <p class="pub-title">Ideal Point Estimation with Graph Neural Networks</p>
+                        <p class="pub-authors">with Alexander Hoyle</p>
                     </div>
                     <div class="pub-item">
-                        <p class="pub-title">Ideal Point Model: a Graph Neural Network Approach</p>
-                        <p class="pub-authors">with A. Hoyle (ETH Zürich)</p>
-                    </div>
-                    <div class="pub-item">
-                        <p class="pub-title">Production Networks & Lobbying</p>
-                        <p class="pub-authors">with L. Scotti (Ca' Foscari)</p>
+                        <p class="pub-title">Production Networks and Lobbying</p>
+                        <p class="pub-authors">with Luca Scotti</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="cv" class="section alt-bg">
+        <section id="teaching" class="section alt-bg">
+            <div class="container">
+                <h2>Teaching</h2>
+                <ul class="education-list">
+                    <li>
+                        <strong>Causal Machine Learning</strong> — lecturer, PhD course, Ca' Foscari University of Venice<br>
+                        <span class="institution"><a href="https://github.com/adrnmt95/causal_ml_lecture" target="_blank">Course material (notebooks) on GitHub</a></span>
+                    </li>
+                    <li>
+                        <strong>Economics of Risk and Agent Behavior</strong> — guest lecturer, master's level, Ca' Foscari University of Venice
+                    </li>
+                    <li>
+                        <strong>Microeconomics</strong> — lecturer and teaching assistant, bachelor's level, Ca' Foscari University of Venice
+                    </li>
+                    <li>
+                        <strong>Macroeconomics</strong> — teaching assistant, bachelor's level, Ca' Foscari University of Venice
+                    </li>
+                    <li>
+                        <strong>Probability Theory and Statistics</strong> — teaching assistant, PhD level, Ca' Foscari University of Venice
+                    </li>
+                    <li>
+                        <strong>Supervision</strong> — master's thesis in economics, University of Zurich (2026, ongoing)
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
             <div class="container">
                 <h2>CV</h2>
-                <p>You can download my full CV here:</p>
-                <a href="main.pdf" class="cv-button" target="_blank">
+                <a href="amati_cv.pdf" class="cv-button" target="_blank">
                     <i class="fas fa-file-pdf"></i> Download CV (PDF)
                 </a>
-
-                <div class="cv-highlights">
-                    <h3>Teaching</h3>
-                    <ul class="education-list">
-                        <li>
-                            <strong>Causal Machine Learning</strong><br>
-                            <span class="institution">Guest Lecturer, Ph.D. Level, Ca' Foscari University of Venice</span><br>
-                            <span class="institution"><a href="https://github.com/adrnmt95/causal_ml_lecture" target="_blank">Notebook material available here</a></span>
-                        </li>
-                        <li>
-                            <strong>Economics of Risk and Agent Behavior</strong><br>
-                            <span class="institution">Guest Lecturer, Master Level, Ca' Foscari University of Venice</span>
-                        </li>
-                        <li>
-                            <strong>Probability Theory and Statistics</strong><br>
-                            <span class="institution">Teaching Assistant, Ph.D. Level, Ca' Foscari University of Venice</span>
-                        </li>
-                        <li>
-                            <strong>Microeconomics</strong><br>
-                            <span class="institution">Lecturer, Bachelor Level, Ca' Foscari University of Venice</span>
-                        </li>
-                        <li>
-                            <strong>Microeconomics</strong><br>
-                            <span class="institution">Teaching Assistant, Bachelor Level, Ca' Foscari University of Venice</span>
-                        </li>
-                        <li>
-                            <strong>Macroeconomics</strong><br>
-                            <span class="institution">Teaching Assistant, Bachelor Level, Ca' Foscari University of Venice</span>
-                        </li>
-
-                    </ul>
-
-                    <h3>Education</h3>
-                    <ul class="education-list">
-                        <li>
-                            <strong>Ph.D. in Economics</strong> (2022 - Present)<br>
-                            <span class="institution">Ca' Foscari University of Venice, Italy</span>
-                        </li>
-                        <li>
-                            <strong>M.A. Economics</strong> (2019 - 2020)<br>
-                            <span class="institution">Collegio Carlo Alberto, Turin, Italy</span>
-                        </li>
-                        <li>
-                            <strong>M.Sc. International Trade, Finance and Development</strong> (2018 - 2019)<br>
-                            <span class="institution">Barcelona Graduate School of Economics, Spain</span>
-                        </li>
-                        <li>
-                            <strong>B.Sc. Economics and Business Economics</strong> (2014 - 2017)<br>
-                            <span class="institution">Maastricht University, The Netherlands</span>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="education-list">
+                    <li><strong>Postdoctoral Researcher</strong>, ETH Zürich (2026–present)</li>
+                    <li><strong>PhD in Economics</strong>, Ca' Foscari University of Venice (2022–2026)<br>
+                        <span class="institution">Visiting researcher, ETH Zürich Center for Law and Economics (2024–2025)</span></li>
+                    <li><strong>M.A. Economics</strong>, Collegio Carlo Alberto, Turin (2019–2020)</li>
+                    <li><strong>M.Sc. International Trade, Finance and Development</strong>, Barcelona GSE (2018–2019)</li>
+                    <li><strong>B.Sc. Economics and Business Economics</strong>, Maastricht University (2014–2017)</li>
+                </ul>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section alt-bg">
             <div class="container">
                 <h2>Contact</h2>
                 <div class="contact-info">
                     <p>
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:adriano.amati@unive.it">adriano.amati@unive.it</a>
+                        <a href="mailto:adriano.amati@gess.ethz.ch">adriano.amati@gess.ethz.ch</a>
                     </p>
                     <p>
                         <i class="fas fa-envelope"></i>
                         <a href="mailto:adrianoamati@gmail.com">adrianoamati@gmail.com</a>
                     </p>
-
+                    <p>
+                        <i class="fas fa-location-dot"></i>
+                        International Relations and Data Science Group, ETH Zürich, Switzerland
+                    </p>
                 </div>
             </div>
         </section>
@@ -221,7 +239,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025, Adriano Amati.</p>
+            <p>&copy; 2026 Adriano Amati</p>
         </div>
     </footer>
 </body>

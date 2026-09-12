@@ -1,0 +1,159 @@
+% Adriano Amati -- academic CV
+% Compile with pdflatex (no exotic packages needed).
+% Lines marked  %% TODO  need a check or a fill-in from you.
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}          % Palatino text + math
+\usepackage[left=1.8cm,right=1.8cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\definecolor{linkblue}{RGB}{20,60,120}
+\definecolor{rule}{gray}{0.55}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{rule}Adriano Amati -- Curriculum Vitae}
+\fancyfoot[R]{\footnotesize\color{rule}\thepage}
+
+% Section style: small caps, thin rule underneath
+\titleformat{\section}{\large\scshape}{}{0pt}{}[{\color{rule}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+
+% Entry with right-aligned date
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\entry}[2]{\noindent\begin{tabularx}{\textwidth}{@{}Y@{\hspace{1em}}r@{}}#1 & #2\end{tabularx}\par}
+% Compact lists
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,parsep=0pt,topsep=2pt,label=--}
+\newenvironment{papers}{\begin{enumerate}[leftmargin=1.6em,itemsep=4pt,parsep=0pt,topsep=2pt,label={[\arabic*]}]}{\end{enumerate}}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE\scshape Adriano Amati}\\[4pt]
+  {\small Postdoctoral Researcher, International Relations and Data Science (IRDS) Group, ETH Z\"urich}\\[2pt]
+  {\small
+   \href{mailto:adriano.amati@gess.ethz.ch}{adriano.amati@gess.ethz.ch} \,$\cdot$\,   %% TODO confirm this is the ETH address you want to use
+   \href{mailto:adrianoamati@gmail.com}{adrianoamati@gmail.com} \,$\cdot$\,
+   \href{https://adrnmt95.github.io/personal_website/}{adrnmt95.github.io/personal\_website} \,$\cdot$\,
+   \href{https://github.com/adrnmt95}{github.com/adrnmt95}}\\[2pt]
+  {\small Citizenship: Italian (EU)}   %% TODO confirm
+\end{center}
+\vspace{-4pt}
+
+% ---------- Position ----------
+\section{Current Position}
+\entry{\textbf{Postdoctoral Researcher}, ETH Z\"urich, Switzerland}{03/2026 -- present}
+International Relations and Data Science (IRDS) Group, Prof.\ Livia I.\ Schubiger. Research on political violence, state enforcement, and conflict, with computational methods.
+
+% ---------- Education ----------
+\section{Education}
+\entry{\textbf{Ph.D. in Economics}, Ca' Foscari University of Venice, Italy}{2022 -- 2026}
+Thesis: \emph{Essays on Political Economy: Elections, Conflict \& Organized Crime}. Supervisors: Marco Di Cataldo, Agar Brugiavini. Completed February 2026.   %% TODO confirm supervisors' first names
+
+\entry{\textbf{Visiting Ph.D. Researcher}, ETH Z\"urich, Center for Law and Economics}{09/2024 -- 07/2025}
+Research group of Prof.\ Elliott Ash. Text-as-data and political economy projects.
+
+\entry{\textbf{M.A. in Economics}, Collegio Carlo Alberto, Turin, Italy}{2019 -- 2020}
+\entry{\textbf{M.Sc. in International Trade, Finance and Development}, Barcelona GSE, Spain}{2018 -- 2019}
+\entry{\textbf{B.Sc. in Economics and Business Economics}, Maastricht University, The Netherlands}{2014 -- 2017}
+Erasmus exchange at Universidade Nova de Lisboa.
+
+% ---------- Fields ----------
+\section{Research Interests}
+\textbf{Substantive:} political economy; political violence and conflict; state capacity and law enforcement; organized crime; legislative behavior and electoral accountability.\\
+\textbf{Methods:} causal inference (difference-in-differences, event studies, IV); spatial and network econometrics; text-as-data and large language models; graph neural networks; satellite imagery.
+
+% ---------- JMP ----------
+\section{Job Market Paper}
+\begin{papers}
+\item \textbf{When Governments Look Away: Extremist Violence in the West Bank} (single-authored)\\
+\emph{Why do governments fail to restrain non-state violence when they have the capacity to stop it?} I develop a model of institutional forbearance, in which a government relaxes enforcement when private violence advances goals it partly shares, and test it in the West Bank. The 2016 U.S. election, and the December 2017 Jerusalem Declaration, lowered the external cost to Israel of tolerating radical settlers. Using a difference-in-differences design on a fine spatial grid, I compare locations with high and low pre-election suitability for outpost expansion. Settler violence against Palestinians rises sharply and persistently in high-suitability locations, concentrates where further expansion is feasible rather than where settlers already live, and is followed by new outposts in the same places. After fatal attacks, right-wing Knesset blocs demand enforcement far more readily when the perpetrator is Palestinian than when it is a settler. Data: ACLED events classified with LLMs, settlement and outpost maps, Sentinel-2 and Maxar imagery, and the Knesset corpus.
+\end{papers}
+
+% ---------- Working papers ----------
+\section{Working Papers}
+\begin{papers}
+\item \textbf{The Audience and the Agenda: Electoral Accountability and the Public Record}, with Sergio Galletta. \emph{Under review.} \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5110510}{SSRN (2025)}.\\
+The Seventeenth Amendment moved U.S. senators from indirect to direct election. Senators whose inherited partisan base was weakest statewide broadened their floor-speech agendas once direct election became credible; roll-call positions did not move.
+\item \textbf{Mafia Connections: Infiltration in Corporate Ownership}, with Monica Billio, Marco Di Cataldo, and Giovanni Mastrobuoni.\\
+Temporal graph network embeddings of a dynamic Italian ownership network anchored on 5,700 judicially confiscated firms. The embeddings forecast confiscation up to four years ahead and date firms' transitions into a high-risk regime; around that transition, firms expand and become illiquid, consistent with use as financial conduits.
+\item \textbf{The Social Multiplier of Leisure: Peer Effects in Museum Attendance}, with Pasquale Accardo and Giovanni Mastrobuoni. \href{https://researchportal.bath.ac.uk/en/publications/the-social-multiplier-of-leisure-peer-effects-in-museum-attendanc}{University of Bath Working Paper Series}.\\
+Peer effects in museum attendance and membership renewal from administrative cardholder data in Piedmont, identified with age-based price discontinuities.
+\end{papers}
+
+% ---------- WIP ----------
+\section{Work in Progress}
+\begin{itemize}
+\item \textbf{Post-OCR Correction of the U.S. Congressional Record with Fine-Tuned Language Models}, with Sergio Galletta and Elliott Ash.
+\item \textbf{Ideal Point Estimation with Graph Neural Networks}, with Alexander Hoyle.   %% TODO confirm first name
+\item \textbf{Production Networks and Lobbying}, with Luca Scotti.
+\item Contributor to an ERC proposal on invisible populations (migrants and marginalized groups) within the IRDS group at ETH Z\"urich: theoretical framing and data design.
+\end{itemize}
+
+% ---------- Presentations ----------
+\section{Presentations}
+%% TODO add dates for the 2025--26 talks and any others you want listed
+\textbf{2025--2026 (selection):} London School of Economics; Sapienza University of Rome; IRDS and ICR research seminars, ETH Z\"urich.\\
+\textbf{2025:} Brownbag Seminar, ETH Z\"urich (April); Monash--Paris--Warwick--Z\"urich Text-as-Data Workshop (April); SIdE ICEEE Conference, Palermo (May); EEA Annual Congress, Bordeaux (August).\\
+\textbf{2024:} EUI Econometrics Working Group, Florence (January); European Public Choice Society meeting, Vienna (April); Ph.D.\ Day, Ca' Foscari (June); Collegio Carlo Alberto, Turin (December).\\
+\textbf{2023:} SIEP Annual Conference, Verona (September); Ca' Foscari University of Venice (November).
+
+% ---------- Teaching ----------
+\section{Teaching and Supervision}
+%% TODO add academic years if you want them shown
+\entry{\textbf{Causal Machine Learning} (Ph.D.\ course), lecturer}{Ca' Foscari University of Venice}
+\entry{\textbf{Economics of Risk and Agent Behavior} (M.Sc.), guest lecturer}{Ca' Foscari University of Venice}
+\entry{\textbf{Microeconomics} (B.Sc.), lecturer and teaching assistant}{Ca' Foscari University of Venice}
+\entry{\textbf{Macroeconomics} (B.Sc.), teaching assistant}{Ca' Foscari University of Venice}
+\entry{\textbf{Probability Theory and Statistics} (Ph.D.), teaching assistant}{Ca' Foscari University of Venice}
+\entry{\textbf{M.Sc.\ thesis supervision} in economics (ongoing)}{University of Zurich, 2026}
+\vspace{2pt}
+Teaching material for the causal machine learning course is public: \href{https://github.com/adrnmt95/causal_ml_lecture}{github.com/adrnmt95/causal\_ml\_lecture}.
+
+% ---------- Other experience ----------
+\section{Other Research and Professional Experience}
+\entry{\textbf{Research Assistant}, University of Turin, AI4MUSE project}{04/2021 -- 09/2022}
+Supervisor: Prof.\ Giovanni Mastrobuoni. Forecasting models for museum visitor flows; network econometrics of peer effects among museum cardholders; data collection with museum administrations.
+
+\entry{\textbf{Trainee}, European Investment Bank, Luxembourg}{10/2020 -- 03/2021}
+Economics Department (SG-ECON). Firm-level productivity and climate-change work; large-dataset management, web scraping, and econometric analysis.
+
+% ---------- Policy reports ----------
+\section{Policy Publications}
+\begin{itemize}
+\item European Investment Bank (2021). Chapter 5, in \emph{EIB Investment Report 2020/2021: Building a Smart and Green Europe in the COVID-19 Era}. (Contributing author.)
+\item Amati, A., Dominguez, S., and Kalantzis, F. (2021). \emph{European Firms and Climate Change 2020/2021}. European Investment Bank.
+\end{itemize}
+
+% ---------- Skills ----------
+\section{Skills}
+\textbf{Languages:} Italian (native), English (fluent), Spanish (advanced), Portuguese (basic).\\
+\textbf{Software:} Python (PyTorch, PyTorch Geometric, scikit-learn), Stata, R, \LaTeX, Bash, ArcGIS Pro, QGIS.
+
+% ---------- References ----------
+\section{References}
+%% TODO: fill in the three email addresses; check titles
+\begin{tabularx}{\textwidth}{@{}YYY@{}}
+\textbf{Livia I. Schubiger} & \textbf{Giovanni Mastrobuoni} & \textbf{Sergio Galletta}\\
+Professor, ETH Z\"urich & Professor, University of Turin and Collegio Carlo Alberto & Sapienza University of Rome\\
+{[email]} & {[email]} & {[email]}
+\end{tabularx}
+
+\vfill
+{\footnotesize\color{rule}Last updated: September 2026}
+
+\end{document}
