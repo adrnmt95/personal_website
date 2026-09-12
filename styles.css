@@ -490,18 +490,6 @@ footer p {
 
 
 /* --- additions (2026) --- */
-.banner {
-    background: #fff8e6;
-    border: 1px solid #f0d58c;
-    border-left: 4px solid #e0a800;
-    border-radius: 6px;
-    padding: 0.9rem 1.2rem;
-    margin-bottom: 2rem;
-    font-size: 1.02rem;
-}
-.banner a { color: var(--primary-color); font-weight: 600; }
-.banner a:hover { color: var(--secondary-color); }
-
 .muted { color: #666; font-size: 0.95rem; }
 .muted a { color: var(--secondary-color); text-decoration: none; }
 
